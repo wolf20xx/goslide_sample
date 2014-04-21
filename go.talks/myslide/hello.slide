@@ -1,0 +1,30 @@
+GoSlideの特徴
+
+* 特徴
+
+- markdown記法的な書き方が可能
+
+- コードの埋め込みが可能
+
+    package main
+
+    import "fmt"
+
+    func main() {
+        fmt.Println("It works!")
+    }
+
+- コードのファイル指定埋め込みもできる
+
+    `.code hello/hello.go`のように書くと以下表示可能
+
+.code hello/hello.go
+
+* 特徴続き
+- コードの実行も可能（コード表示枠の右下に[Run]が表示される）
+
+    `.play hello/hello.go /main/,`のように書く
+
+.play hello/hello.go /main/,
+
+- 最後にはデフォルトで「Thank you」と付加されている
